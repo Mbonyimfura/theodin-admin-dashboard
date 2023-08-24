@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+
+.container div {
+  padding: 6px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template: 1fr 4fr;
+}
+.header {
+  background: #f9fafb;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column: 2/5;
+  position: relative;
+}
+.sidebar {
+  background: #3b82f6;
+  display: grid;
+  grid-row: 1/6;
+  position: relative;
+  cursor: pointer;
+}
+.main-content {
+  background: #e2e8f0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.search-icon img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 2rem;
+}
+
+.search-input input {
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  width: 500px;
+  background-color: #e2e8f0;
+  padding: 0.5rem;
+  position: absolute;
+  left: 5rem;
+}
+.right-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  cursor: pointer;
+}
+.notification img {
+  width: 30px;
+  height: 30px;
+}
+
+.sm-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #facc15;
+  margin-top: -0.8rem;
+}
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+.bottom-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 6px;
+}
+.lg-logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #facc15;
+  margin-right: 10rem;
+}
+.lg-text {
+  font-size: 12px;
+  margin-right: 12rem;
+  margin-top: 2rem;
+  position: absolute;
+  left: 7rem;
+}
+.lg-text span {
+  margin-right: 10rem;
+}
+
+.header-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: 8rem;
+  position: absolute;
+  left: 35rem;
+}
+.header-list button {
+  border-radius: 2rem;
+  margin: 1rem;
+  border: 1px solid #3b82f6;
+  padding: 0.5rem 1rem;
+  background: #3b82f6;
+  color: #e2e8f0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-right: 0.5rem;
+}
+.dashboard img {
+  width: 50px;
+  height: 40px;
+  margin-left: 0.2rem;
+}
+.dashboard-content {
+  font-size: 20px;
+  text-align: center;
+  color: #e2e8f0;
+  font-weight: bold;
+  margin-left: -2rem;
+}
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  align-items: center;
+  top: 6rem;
+  left: 1rem;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+.home-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10.5rem;
+  font-weight: bold;
+}
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 9rem;
+  left: 1rem;
+}
+
+.profile-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.message {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 12rem;
+  left: 1rem;
+}
+
+.message-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 8rem;
+  font-weight: bold;
+}
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 15rem;
+  left: 1rem;
+}
+
+.history-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 18rem;
+  left: 1rem;
+}
+.tasks-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 11rem;
+  font-weight: bold;
+}
+.communities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 20.5rem;
+  left: 1rem;
+}
+.communities-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 8rem;
+  font-weight: bold;
+}
+.setting {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 28rem;
+  left: 1rem;
+}
+.setting-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.support {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 30rem;
+  left: 1rem;
+}
+.support-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.privacy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: absolute;
+  top: 32rem;
+  left: 1rem;
+}
+.privacy-content {
+  font-size: 20px;
+  color: #e2e8f0;
+  text-align: center;
+  margin-right: 10rem;
+  font-weight: bold;
+}
+.main-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12x;
+  text-align: left;
+  margin-left: 0.5rem;
+  gap: 24rem;
+}
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 0;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  gap: 25px;
+}
+.card-container .card {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #e5e8ed;
+  border-radius: 10px;
+  height: 100%;
+  position: relative;
+  padding: 1rem;
+}
+.card-container .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #facc15;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main-content .title {
+  font-size: 18px;
+  text-align: left;
+}
+.main-content p {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+.card .title {
+  font-size: 20px;
+}
+.card .img-icon {
+  margin: 2rem 0 0 12rem;
+}
+.card img {
+  width: 20px;
+  height: 20px;
+}
+.left-content {
+  display: grid;
+  grid-row: 1fr 1fr;
+}
+.left-content .card {
+  background: #fff;
+  text-align: center;
+  border: 1px solid #e5e8ed;
+  border-radius: 10px;
+  height: 95%;
+  width: 90%;
+  font-size: 2px;
+}
+.trend h3 {
+  text-align: left;
+}
+.emoji-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.emoji-container .emoji {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+.emoji-content {
+  position: absolute;
+  left: 3rem;
+  top: 0.5rem;
+  font-size: 16px;
+}
+.emoji img {
+  width: 50px;
+  height: 50px;
+  background: #e2e8f0;
+}
+.emoji img {
+  border: 1px solid #facc15;
+  border-radius: 50%;
+}
